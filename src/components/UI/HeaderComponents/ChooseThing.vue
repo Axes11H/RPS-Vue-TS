@@ -1,7 +1,7 @@
 <script setup lang="ts">
    import { ref, defineEmits } from "vue"
 
-   let choosedThing = ref<string>("")
+   let choosedThing = ref<string>("paper")
    
    function choosething(value: string){
       choosedThing.value = value

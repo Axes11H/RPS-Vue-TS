@@ -2,7 +2,7 @@
    import { defineProps } from "vue";
 
    interface ThingProps{
-      choosedThing: String
+      choosedThing: string,
    }
 
    defineProps<ThingProps>()

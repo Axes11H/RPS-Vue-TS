@@ -1,13 +1,15 @@
-<script lang="ts">
-   export default {
-      
+<script lang="ts" setup>
+   import { defineProps } from "vue";
+    
+   interface BtnProps{
+      text: string
    }
+
+   const props = defineProps<BtnProps>()
 </script>
 
 <template>
-   <div class="d-flex justify-content-center mt-5">
-      <button>START</button>
-   </div>
+   <button>{{ props.text }}</button>
 </template>
 
 <style scoped>

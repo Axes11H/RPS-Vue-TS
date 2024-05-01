@@ -4,7 +4,7 @@
    import Header from './UI/Header.vue';
    import GameZone from './UI/GameZone.vue';
 
-   let choosedThing = ref<string>("");
+   let choosedThing = ref<string>("paper");
 
    function updateChoosedThing(value: string){
       choosedThing.value = value;
